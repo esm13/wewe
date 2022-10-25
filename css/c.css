@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+#box{
+    width: 150px;
+    height: 150px;
+    background-image: url("../image/car.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: solid 1px black;
+    border-radius: 5px; */
+    float: left;
+    transition: 0.5s;
+    position: relative;
+    /* animation-name: mymove; */
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    transform: rotateX('angle');
+}
+#pic{
+    width: 150px;
+    height: 150px;
+    background-image: url("../image/car2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes mymove {
+    0%   {
+        top: 50px;
+        left: 0px;
+    }
+    50%  {
+        top: 50px;
+        left:500px;
+    }
+    75%  {
+        top: 50px;
+        left: 500px;
+    }
+    100% {
+        top: 50px;
+        left: 50px;
+    }
